@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" async></script>
+</head>
+<body >
+    <header >
+        <div class="container">
+          <div class="navbar"> 
+           <div class="logo">
+               <img src="res/logo.jpg" width="125px">
+           </div> 
+           <nav>
+               <ul>
+                   <li><a href="file:///C:/Users/OMAR/Desktop/projet/index.html?#home" >Home</a></li>
+                   <li><a href="file:///C:/Users/OMAR/Desktop/projet/index.html?#products" >Products</a></li>
+                   <li><a href="#contact" >Contact</a></li>
+               </ul>
+           </nav>
+           <img src="res/cart.jpg" width="30px" height="30px">
+         </div>
+         </div>
+    </header>
+
+    <div class="smal-container cart">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <div class="cart-row">
+                <td>
+                    <div class="cart-info">
+                        <img src="res/foot1.jpg">
+                        <div>
+                            <p>ADIDAS X 19.4 Fxg Lace-up Football Shoes</p>
+                            <small>$46,84</small><br>
+                            <a class="btn-danger" >Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1" class="cart-quantity-input"></td>
+                <td class="cart-price">$46,84</td>
+            </div>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                   <td>Total</td>
+                   <div class="cart-total-price">
+                   <td class="cart-total-price">$50,00</td>
+                   </div>
+                </tr>
+                <tr>
+                    <td><button class="btn-purchase" onclick="alert('Thanks for your purchase')" >Purchase</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer id='contact'>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <img src="res/logo.jpg">
+                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i>   sneakerstudio@gmail.com</p>
+                    <p><i class="fa fa-phone-square" aria-hidden="true"></i>    12 345 678</p>
+                </div>
+                <div class="footer-col-2">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><i class="fa fa-facebook-square" aria-hidden="true"></i>  Facebook</li><br>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i>  Instagram</li><br>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i>  Twitter</li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <input type="text" value="Your email address"><br>
+                        <textarea rows="5" cols="24">message...</textarea><br>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
